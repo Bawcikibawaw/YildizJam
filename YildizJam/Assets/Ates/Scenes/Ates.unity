@@ -517,8 +517,6 @@ GameObject:
   - component: {fileID: 2110726840}
   - component: {fileID: 2110726839}
   - component: {fileID: 2110726838}
-  - component: {fileID: 2110726837}
-  - component: {fileID: 2110726842}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -526,23 +524,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2110726837
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2110726836}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8bde889708b87cd4aa642dcb94944edc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 7
-  acceleration: 7
-  deceleration: 7
-  rb: {fileID: 0}
-  currentVelocity: {x: 0, y: 0}
 --- !u!50 &2110726838
 Rigidbody2D:
   serializedVersion: 5
@@ -687,27 +668,6 @@ Transform:
   - {fileID: 1325176949}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2110726842
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2110726836}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e16c48558198fa4b9e5c1d1a9b7d44f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  jumpForce: 5
-  groundCheck: {fileID: 1325176949}
-  groundCheckRadius: 0.1
-  groundLayer:
-    m_Bits: 8
-  rb: {fileID: 0}
-  isGrounded: 0
-  extraJumps: 0
-  maxExtraJumps: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

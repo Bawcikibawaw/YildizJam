@@ -1,11 +1,10 @@
 using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using Murat.Scripts.Runtime.Events;
 using Murat.Scripts.Runtime.Extensions;
 using Murat.Scripts.Runtime.Handler;
 using Murat.Scripts.Runtime.Helpers;
 using Murat.Scripts.Runtime.Keys;
+using UnityEngine;
 
 namespace Murat.Scripts.Runtime.Managers
 {
@@ -15,8 +14,8 @@ namespace Murat.Scripts.Runtime.Managers
         [SerializeField] private AudioSource audioSource;
 
         private float _globalVolume = 0.5f;
-        private Queue<AudioRequest> _audioQueue = new();
-        private bool _isPlaying = false;
+
+        private Coroutine _playingCoroutine;
 
         private void OnEnable()
         {
@@ -40,45 +39,30 @@ namespace Murat.Scripts.Runtime.Managers
         public void PlaySound(string name)
         {
             SFXSO sfx = soundLibrary.GetClipFromName(name);
+
             if (sfx == null || sfx.GetClip() == null)
             {
                 Debug.LogWarning($"Sound '{name}' not found in library.");
                 return;
             }
 
-            _audioQueue.Enqueue(new AudioRequest(sfx.GetClip(), sfx.volume * _globalVolume));
-            
-            if (!_isPlaying)
-                StartCoroutine(PlayQueue());
-        }
-
-        private IEnumerator PlayQueue()
-        {
-            _isPlaying = true;
-
-            while (_audioQueue.Count > 0)
+            if (_playingCoroutine == null)
             {
-                var request = _audioQueue.Dequeue();
-                audioSource.clip = request.Clip;
-                audioSource.volume = request.Volume;
-                audioSource.Play();
-
-                yield return new WaitWhile(() => audioSource.isPlaying);
-            }
-
-            _isPlaying = false;
-        }
-
-        private class AudioRequest
-        {
-            public AudioClip Clip { get; }
-            public float Volume { get; }
-
-            public AudioRequest(AudioClip clip, float volume)
-            {
-                Clip = clip;
-                Volume = volume;
+                _playingCoroutine = StartCoroutine(PlaySoundCoroutine(sfx.GetClip(), sfx.volume * _globalVolume));
             }
         }
+
+        private IEnumerator PlaySoundCoroutine(AudioClip clip, float volume)
+        {
+            audioSource.clip = clip;
+            audioSource.volume = volume;
+            audioSource.Play();
+
+            yield return new WaitWhile(() => audioSource.isPlaying);
+
+            _playingCoroutine = null;
+        }
+        
+        
     }
 }

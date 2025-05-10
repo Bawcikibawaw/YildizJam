@@ -1,22 +1,36 @@
-using System;
-using Murat.Scripts.Runtime.Helpers;
-using Unity.VisualScripting;
+using System.Collections;
+using Murat.Scripts.Runtime.Interfaces;
+using Murat.Scripts.Runtime.Managers;
 using UnityEngine;
 
-public class PlayerPhysicsController : MonoBehaviour
+namespace Murat.Scripts.Runtime.Controllers.Player
 {
-    private void OnCollisionEnter2D(Collision2D other)
+    public class PlayerPhysicsController : MonoBehaviour
     {
-        
-    }
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.TryGetComponent<IDamageable>(out var damageable))
+    
+    
+        private void OnCollisionEnter2D(Collision2D other)
         {
-            damageable.Damage();
+        
         }
+
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            if (other.TryGetComponent<IDamageable>(out var  damageable))
+            {
+                damageable.Damage();
+                StartCoroutine(ResetGame());
+            }
+        }
+
+        private IEnumerator ResetGame()
+        {
+            //Dead
+            // Disable input
+            yield return new WaitForSeconds(1);
+            LevelManager.Instance.Reset();
+        }
+    
+    
     }
-    
-    
 }

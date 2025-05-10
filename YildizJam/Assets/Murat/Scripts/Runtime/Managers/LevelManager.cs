@@ -1,4 +1,5 @@
 using Murat.Scripts.Runtime.Commands.Level;
+using Murat.Scripts.Runtime.Data.UnityObject;
 using Murat.Scripts.Runtime.Data.ValueObject.Level;
 using Murat.Scripts.Runtime.Extensions;
 using UnityEngine;
@@ -12,8 +13,9 @@ namespace Murat.Scripts.Runtime.Managers
         private OnLevelLoader _levelLoader;
         private OnLevelDestroyer _levelDestroyer;
 
-        private LevelData _currenLevelData;
+        private CD_Level _currenLevelData;
 
+        private int _currentLevelIndex;
         private int _currentMapIndex;
 
         protected override void Awake()
@@ -21,18 +23,26 @@ namespace Murat.Scripts.Runtime.Managers
             base.Awake();
             _levelLoader = new OnLevelLoader(levelHolder);
             _levelDestroyer = new OnLevelDestroyer(levelHolder);
+
+            _currenLevelData = Resources.Load<CD_Level>("Data/CD_Level");
         }
 
-        public void OnLoadNewMap()
+        private void OnLoadNewMap()
         {
             _levelDestroyer.Execute();
             _currentMapIndex++;
-            _levelLoader.Execute(_currenLevelData.LevelObjects[_currentMapIndex]);
+            _levelLoader.Execute(_currenLevelData.LevelData[_currentLevelIndex].LevelObjects[_currentMapIndex]);
+        }
+        
+        public void Reset()
+        {
+            _currentMapIndex = 0;
+            OnLoadNewMap();
         }
 
-        public void SetNewLevelData(LevelData levelData)
+        public void SetNewLevelData()
         {
-            _currenLevelData = levelData;
+            _currentLevelIndex++;
             _currentMapIndex = 0;
             OnLoadNewMap();
         }

@@ -1,6 +1,7 @@
-using UnityEngine;
-
-public interface IDamageable
+namespace Murat.Scripts.Runtime.Interfaces
 {
-    void Damage();
+    public interface IDamageable
+    {
+        void Damage();
+    }
 }

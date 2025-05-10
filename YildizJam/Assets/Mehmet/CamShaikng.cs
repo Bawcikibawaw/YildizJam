@@ -1,4 +1,5 @@
 using System;
+using Ates.ScriptsAtes;
 using UnityEngine;
 using UnityEngine.Serialization;
 using Random = UnityEngine.Random;

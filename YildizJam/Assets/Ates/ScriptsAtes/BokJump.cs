@@ -1,4 +1,5 @@
 using System.Collections;
+using Murat.Scripts.Runtime.Managers;
 using UnityEngine;
 
 namespace Ates.ScriptsAtes
@@ -16,9 +17,13 @@ namespace Ates.ScriptsAtes
         public int maxExtraJumps = 1; // Allow 1 extra jump in air
         private BokStamina bokStamina;
         public Animator animator;
+
+        public AudioSource audioSource;
+        public AudioClip audioClip;
     
         void Start()
         {
+            audioSource = GetComponent<AudioSource>();
             rb = GetComponent<Rigidbody2D>();
             extraJumps = maxExtraJumps;
             bokStamina = GameObject.FindGameObjectWithTag("Player").GetComponent<BokStamina>();
@@ -53,6 +58,9 @@ namespace Ates.ScriptsAtes
     
         void Jump()
         {
+            //ses buraya gelccek 
+            audioSource.PlayOneShot(audioClip);
+            AudioManager.Instance.PlaySound("Jump");
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f); // Reset vertical velocity before jump
             rb.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
         }

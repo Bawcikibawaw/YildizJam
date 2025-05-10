@@ -1,10 +1,11 @@
 using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 using Murat.Scripts.Runtime.Events;
 using Murat.Scripts.Runtime.Extensions;
 using Murat.Scripts.Runtime.Handler;
 using Murat.Scripts.Runtime.Helpers;
 using Murat.Scripts.Runtime.Keys;
-using UnityEngine;
 
 namespace Murat.Scripts.Runtime.Managers
 {
@@ -14,8 +15,8 @@ namespace Murat.Scripts.Runtime.Managers
         [SerializeField] private AudioSource audioSource;
 
         private float _globalVolume = 0.5f;
-
-        private Coroutine _playingCoroutine;
+        private Queue<AudioRequest> _audioQueue = new();
+        private bool _isPlaying = false;
 
         private void OnEnable()
         {
@@ -39,28 +40,45 @@ namespace Murat.Scripts.Runtime.Managers
         public void PlaySound(string name)
         {
             SFXSO sfx = soundLibrary.GetClipFromName(name);
-
             if (sfx == null || sfx.GetClip() == null)
             {
                 Debug.LogWarning($"Sound '{name}' not found in library.");
                 return;
             }
 
-            if (_playingCoroutine == null)
-            {
-                _playingCoroutine = StartCoroutine(PlaySoundCoroutine(sfx.GetClip(), sfx.volume * _globalVolume));
-            }
+            _audioQueue.Enqueue(new AudioRequest(sfx.GetClip(), sfx.volume * _globalVolume));
+            
+            if (!_isPlaying)
+                StartCoroutine(PlayQueue());
         }
 
-        private IEnumerator PlaySoundCoroutine(AudioClip clip, float volume)
+        private IEnumerator PlayQueue()
         {
-            audioSource.clip = clip;
-            audioSource.volume = volume;
-            audioSource.Play();
+            _isPlaying = true;
 
-            yield return new WaitWhile(() => audioSource.isPlaying);
+            while (_audioQueue.Count > 0)
+            {
+                var request = _audioQueue.Dequeue();
+                audioSource.clip = request.Clip;
+                audioSource.volume = request.Volume;
+                audioSource.Play();
 
-            _playingCoroutine = null;
+                yield return new WaitWhile(() => audioSource.isPlaying);
+            }
+
+            _isPlaying = false;
+        }
+
+        private class AudioRequest
+        {
+            public AudioClip Clip { get; }
+            public float Volume { get; }
+
+            public AudioRequest(AudioClip clip, float volume)
+            {
+                Clip = clip;
+                Volume = volume;
+            }
         }
     }
 }

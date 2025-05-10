@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: eaaab2fd4dbfb574d98f6d14c00428dc
+guid: 2f12d5dc2078fc94595f2bbf842c6e33
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2083065900290364852
-    second: "sarma\u015F\u0131k_0"
+      213: -5365770331837759694
+    second: 2.katman_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "sarma\u015F\u0131k_0"
+      name: 2.katman_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 145
+        y: 0
         width: 576
-        height: 179
+        height: 324
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c4aa679a9967713e0800000000000000
-      internalID: -2083065900290364852
+      spriteID: 23ffa70ff44f885b0800000000000000
+      internalID: -5365770331837759694
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "sarma\u015F\u0131k_0": -2083065900290364852
+      2.katman_0: -5365770331837759694
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

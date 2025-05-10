@@ -20,11 +20,13 @@ namespace Ates.ScriptsAtes
         private Transform transform;
         public Animator animator;
         private MideGuruldama mideGuruldama;
+        private KabızIshal kabızIshal;
 
         void Start()
         {
             transform = GetComponent<Transform>();
             mideGuruldama = GameObject.FindGameObjectWithTag("Manager").GetComponent<MideGuruldama>();
+            kabızIshal = GameObject.FindGameObjectWithTag("Player").GetComponent<KabızIshal>();
         }
 
         void Update()
@@ -41,6 +43,34 @@ namespace Ates.ScriptsAtes
 
         void Move()
         {
+            if (Input.GetKey(KeyCode.D) && kabızIshal.isKabiz)
+            {
+                if(moveSpeed < maxSpeed) moveSpeed += acceleration * Time.deltaTime / 2;
+                transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
+                animator.SetInteger("Walk", 1);
+            }
+
+            if (Input.GetKey(KeyCode.A) && kabızIshal.isKabiz)
+            {
+                if(moveSpeed < maxSpeed) moveSpeed += acceleration * Time.deltaTime / 2;
+                transform.Translate(Vector2.left * moveSpeed * Time.deltaTime);
+                animator.SetInteger("Walk", 1);
+            }
+            
+            if (Input.GetKey(KeyCode.D) && kabızIshal.isIshal)
+            {
+                if(moveSpeed < maxSpeed) moveSpeed += acceleration * Time.deltaTime * 2;
+                transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
+                animator.SetInteger("Walk", 1);
+            }
+
+            if (Input.GetKey(KeyCode.A) && kabızIshal.isIshal)
+            {
+                if(moveSpeed < maxSpeed) moveSpeed += acceleration * Time.deltaTime * 2;
+                transform.Translate(Vector2.left * moveSpeed * Time.deltaTime);
+                animator.SetInteger("Walk", 1);
+            }
+            
             if (Input.GetKey(KeyCode.D))
             {
                 if(moveSpeed < maxSpeed) moveSpeed += acceleration * Time.deltaTime;

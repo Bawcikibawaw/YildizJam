@@ -9,13 +9,16 @@ namespace Ates.ScriptsAtes
         public bool isKabiz;
         public bool isIshal;
         public float cooldown = 2f;  // Cooldown süresi (saniye)
+        public float sUse = 20;
         private float lastTimeEventTriggered = -Mathf.Infinity;
+        private BokStamina bokStamina;
 
 
         void Start()
         {
             isKabiz = false;
             isIshal = false;
+            bokStamina = GameObject.FindGameObjectWithTag("Player").GetComponent<BokStamina>();
         }
 
         void Update()
@@ -26,6 +29,7 @@ namespace Ates.ScriptsAtes
                 if (Time.time >= lastTimeEventTriggered + cooldown)
                 {
                     EventChoser();
+                    bokStamina.stamina -= sUse;
                     lastTimeEventTriggered = Time.time;
                 }
                 else

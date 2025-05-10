@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 namespace Ates.ScriptsAtes
@@ -11,12 +12,15 @@ namespace Ates.ScriptsAtes
         private Rigidbody2D rb;
         private bool isGrounded;
         private int extraJumps;
+        public bool hasJumped;
         public int maxExtraJumps = 1; // Allow 1 extra jump in air
+        private BokStamina bokStamina;
     
         void Start()
         {
             rb = GetComponent<Rigidbody2D>();
             extraJumps = maxExtraJumps;
+            bokStamina = GameObject.FindGameObjectWithTag("Player").GetComponent<BokStamina>();
         }
     
         void Update()
@@ -28,16 +32,18 @@ namespace Ates.ScriptsAtes
                 extraJumps = maxExtraJumps; // Reset extra jumps when grounded
             }
             // Jump input detected
-            if (Input.GetButtonDown("Jump"))
+            if (Input.GetButtonDown("Jump") && bokStamina.stamina >= 20)
             {
                 if (isGrounded)
                 {
                     Jump();
+                    bokStamina.stamina -= 20;
                 }
                 else if (extraJumps > 0)
                 {
                     Jump();
                     extraJumps--;
+                    bokStamina.stamina -= 20;
                 }
             }
         }
@@ -55,5 +61,6 @@ namespace Ates.ScriptsAtes
                 Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
             }
         }
+        
     }
 }

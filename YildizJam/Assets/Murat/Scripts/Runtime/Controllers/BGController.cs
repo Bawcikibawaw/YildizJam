@@ -8,7 +8,7 @@ namespace Murat.Scripts.Runtime.Controllers
     {
         private Material _material;
         private float _scrollSpeed;
-        private Vector2 _scrollPosition = Caches.float2Zero;
+        private Vector2 _scrollPosition = Caches.Float2Zero;
         
         private void Start()
         {

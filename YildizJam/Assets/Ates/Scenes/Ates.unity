@@ -914,6 +914,7 @@ MonoBehaviour:
     m_Bits: 8
   hasJumped: 0
   maxExtraJumps: 1
+  animator: {fileID: 2110726846}
 --- !u!114 &2110726843
 MonoBehaviour:
   m_ObjectHideFlags: 0

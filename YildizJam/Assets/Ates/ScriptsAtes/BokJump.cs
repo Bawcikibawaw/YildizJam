@@ -15,6 +15,7 @@ namespace Ates.ScriptsAtes
         public bool hasJumped;
         public int maxExtraJumps = 1; // Allow 1 extra jump in air
         private BokStamina bokStamina;
+        public Animator animator;
     
         void Start()
         {
@@ -29,11 +30,13 @@ namespace Ates.ScriptsAtes
             isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
             if (isGrounded)
             {
+                animator.SetInteger("Jump" , 0);
                 extraJumps = maxExtraJumps; // Reset extra jumps when grounded
             }
             // Jump input detected
             if (Input.GetButtonDown("Jump") && bokStamina.stamina >= 20)
             {
+                animator.SetInteger("Jump" , 1);
                 if (isGrounded)
                 {
                     Jump();

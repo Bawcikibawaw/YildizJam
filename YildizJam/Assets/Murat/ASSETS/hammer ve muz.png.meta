@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      hammer ve muz_0: -936095492611039189
+      hammer ve muz_1: -3215195575488271201
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

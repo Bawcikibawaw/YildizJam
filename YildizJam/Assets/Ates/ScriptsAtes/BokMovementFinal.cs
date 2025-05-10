@@ -56,6 +56,38 @@ namespace Ates.ScriptsAtes
                 transform.Translate(Vector2.left * moveSpeed * Time.deltaTime);
                 animator.SetInteger("Walk", 1);
             }
+            
+            if (Input.GetKey(KeyCode.D) && kabızIshal.isKabiz)
+            {
+                AudioManager.Instance.PlaySound("Walking");
+                if(moveSpeed < maxSpeed) moveSpeed += acceleration * Time.deltaTime / 2;
+                transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
+                animator.SetInteger("Walk", 1);
+            }
+
+            if (Input.GetKey(KeyCode.A) && kabızIshal.isKabiz)
+            {
+                AudioManager.Instance.PlaySound("Walking");
+                if(moveSpeed < maxSpeed) moveSpeed += acceleration * Time.deltaTime / 2;
+                transform.Translate(Vector2.left * moveSpeed * Time.deltaTime);
+                animator.SetInteger("Walk", 1);
+            }
+            
+            if (Input.GetKey(KeyCode.D) && kabızIshal.isIshal)
+            {
+                AudioManager.Instance.PlaySound("Walking");
+                if(moveSpeed < maxSpeed) moveSpeed += acceleration * Time.deltaTime * 2;
+                transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
+                animator.SetInteger("Walk", 1);
+            }
+
+            if (Input.GetKey(KeyCode.A) && kabızIshal.isIshal)
+            {
+                AudioManager.Instance.PlaySound("Walking");
+                if(moveSpeed < maxSpeed) moveSpeed += acceleration * Time.deltaTime * 2;
+                transform.Translate(Vector2.left * moveSpeed * Time.deltaTime);
+                animator.SetInteger("Walk", 1);
+            }
         }
     
         void DeAcceleration()

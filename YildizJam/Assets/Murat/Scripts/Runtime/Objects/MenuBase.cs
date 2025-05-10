@@ -1,3 +1,4 @@
+using Murat.Scripts.Runtime.Managers;
 using UnityEngine;
 
 namespace Murat.Scripts.Runtime.BaseClass
@@ -8,18 +9,28 @@ namespace Murat.Scripts.Runtime.BaseClass
 
         private bool _isOpen;
 
-        public virtual void Open()
+        public void Open()
         {
             if (_isOpen) return;
             _isOpen = true;
             gameObject.SetActive(_isOpen);
         }
 
-        public virtual void Close()
+        public void Close()
         {
             if (!_isOpen) return;
             _isOpen = false;
             gameObject.SetActive(_isOpen);
+        }
+
+        public void OpenMenu(string name)
+        {
+            MenuManager.Instance.OpenMenu(name);
+        }
+
+        public void CloseMenu()
+        {
+            MenuManager.Instance.CloseAllMenu();
         }
 
         public string GetMenuName()

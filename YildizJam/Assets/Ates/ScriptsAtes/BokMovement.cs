@@ -1,19 +1,30 @@
+using System.Collections;
 using UnityEngine;
 
 namespace Ates.ScriptsAtes
 {
     public class BokMovement : MonoBehaviour
     {
-        public float moveSpeed = 1.0f;
+        public float moveSpeed = 2.0f;
+        private float gurulMoveSpeed = 1.0f;
+        
         public float maxSpeed = 10.0f;
-        public float minSpeed = 1.0f;
+        private float gurulMaxSpeed = 1.0f;
+        
+        public float minSpeed = 2.0f;
+        private float gurulMinSpeed = 1.0f;
+        
         public float acceleration = 5.0f;
+        private float gurulAcceleration = 2.5f;
+       
         private Transform transform;
         public Animator animator;
+        private MideGuruldama mideGuruldama;
 
         void Start()
         {
             transform = GetComponent<Transform>();
+            mideGuruldama = GameObject.FindGameObjectWithTag("Manager").GetComponent<MideGuruldama>();
         }
 
         void Update()
@@ -21,6 +32,11 @@ namespace Ates.ScriptsAtes
             Move();
             DeAcceleration();
             Side();
+
+            if (mideGuruldama.hasGuruldama && mideGuruldama.loopStarted)
+            {
+                StartCoroutine(GurulMove());
+            }
         }
 
         void Move()
@@ -62,6 +78,17 @@ namespace Ates.ScriptsAtes
             {
                 transform.localScale = new Vector3(-1, 1, 1); // Facing left
             }
+        }
+
+        private IEnumerator GurulMove()
+        {
+            minSpeed = gurulMinSpeed;
+            maxSpeed = gurulMaxSpeed;
+            acceleration = gurulAcceleration;
+            yield return new WaitForSecondsRealtime(5f);
+            minSpeed = 2f;
+            maxSpeed = 10f;
+            acceleration = 5f;
         }
     }
 }

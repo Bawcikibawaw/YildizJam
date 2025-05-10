@@ -1,6 +1,6 @@
 using Murat.Scripts.Runtime.Helpers;
+using Murat.Scripts.Runtime.Managers;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace Murat.Scripts.Runtime.Controllers
 {

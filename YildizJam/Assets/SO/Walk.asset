@@ -12,9 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76401f4a2c024d30a9028044d0c405dd, type: 3}
   m_Name: Walk
   m_EditorClassIdentifier: 
-  groupName: 
+  groupName: Walk
   volume: 0.5
   clips:
-  - {fileID: 8300000, guid: dd89803a14af96f4d9a5072a4931bf69, type: 3}
-  - {fileID: 8300000, guid: dd89803a14af96f4d9a5072a4931bf69, type: 3}
   - {fileID: 8300000, guid: dd89803a14af96f4d9a5072a4931bf69, type: 3}

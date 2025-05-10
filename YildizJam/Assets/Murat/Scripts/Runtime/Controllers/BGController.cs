@@ -12,7 +12,7 @@ namespace Murat.Scripts.Runtime.Controllers
         
         private void Start()
         {
-            _material = GetComponent<Image>().material;
+            _material = GetComponent<SpriteRenderer>().material;
         }
         
         private void Update()

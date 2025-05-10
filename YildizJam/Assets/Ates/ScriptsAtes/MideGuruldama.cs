@@ -28,11 +28,11 @@ namespace Ates.ScriptsAtes
 
         private IEnumerator Guruldama()
         {
-            yield return new WaitForSeconds(30f);
+            yield return new WaitForSeconds(5f);
             hasGuruldama = true;
             bokdash.enabled = false;
             bokjump.enabled = false;
-            yield return new WaitForSeconds(30f);
+            yield return new WaitForSeconds(5f);
             hasGuruldama = false;
             bokdash.enabled = true;
             bokjump.enabled = true;

@@ -6,6 +6,6 @@ namespace Murat.Scripts.Runtime.Data.UnityObject
     [CreateAssetMenu(fileName = "CD_Level", menuName = "SO/CD_Level", order = 0)]
     public class CD_Level : ScriptableObject
     {
-        public LevelData LevelData;
+        public LevelData[] LevelData;
     }
 }

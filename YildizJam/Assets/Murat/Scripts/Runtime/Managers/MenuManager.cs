@@ -67,6 +67,11 @@ namespace Murat.Scripts.Runtime.Managers
             }
         }
 
+        public void PlayButton()
+        {
+            MusicManager.Instance.PlayGame();
+        }
+
         public void Quit()
         {
             Application.Quit();

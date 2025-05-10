@@ -26,6 +26,11 @@ namespace Murat.Scripts.Runtime.Managers
             audioSource.volume = _globalVolume;
             PlayerPrefs.SetFloat(Const.MUSIC_KEY,_globalVolume);
         }
+
+        public void PlayGame()
+        {
+            audioSource.clip = gameplay;
+        }
         
     }
 }

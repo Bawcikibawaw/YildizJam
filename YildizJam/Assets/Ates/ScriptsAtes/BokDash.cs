@@ -13,11 +13,13 @@ namespace Ates.ScriptsAtes
        public bool hasDashed;
        private Rigidbody2D rb;
        private BokStamina bokStamina;
+       private KabızIshal kabızIshal;
 
        void Start()
        {
            rb = GetComponent<Rigidbody2D>();
            bokStamina = GameObject.FindGameObjectWithTag("Player").GetComponent<BokStamina>();
+           kabızIshal = GameObject.FindGameObjectWithTag("Player").GetComponent<KabızIshal>();
        }
 
        void Update()
@@ -52,6 +54,14 @@ namespace Ates.ScriptsAtes
            hasDashed = false;
            yield return new WaitForSeconds(dashingCooldown);
            canDash = true;
+       }
+
+       void OnCollisionEnter2D(Collision2D collision)
+       {
+           if (collision.gameObject.tag == "Destructable" && hasDashed && kabızIshal.isKabiz)
+           {
+               Destroy(collision.gameObject);
+           }
        }
        
        

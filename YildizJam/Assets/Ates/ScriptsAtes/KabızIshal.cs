@@ -12,6 +12,9 @@ namespace Ates.ScriptsAtes
         public float sUse = 20;
         private float lastTimeEventTriggered = -Mathf.Infinity;
         private BokStamina bokStamina;
+        private BoxCollider2D boxCollider;
+        private Vector2 originalSize;
+        public Vector2 shrinkSize = new Vector2(0.2f, 0.2f);
 
 
         void Start()
@@ -19,6 +22,8 @@ namespace Ates.ScriptsAtes
             isKabiz = false;
             isIshal = false;
             bokStamina = GameObject.FindGameObjectWithTag("Player").GetComponent<BokStamina>();
+            boxCollider = GetComponent<BoxCollider2D>();
+            originalSize = boxCollider.size;
         }
 
         void Update()
@@ -66,7 +71,9 @@ namespace Ates.ScriptsAtes
         private IEnumerator Ishal()
         {
             isIshal = true;
+            boxCollider.size = shrinkSize;
             yield return new WaitForSecondsRealtime(1f);
+            boxCollider.size = originalSize;
             isIshal = false;
         }
         

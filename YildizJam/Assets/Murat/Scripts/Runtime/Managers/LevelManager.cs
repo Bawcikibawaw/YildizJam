@@ -31,7 +31,7 @@ namespace Murat.Scripts.Runtime.Managers
         {
             _levelDestroyer.Execute();
             _currentMapIndex++;
-            _levelLoader.Execute(_currenLevelData.LevelData[_currentLevelIndex].LevelObjects[_currentMapIndex]);
+            _levelLoader.Execute(_currenLevelData.LevelData[_currentLevelIndex],_currentMapIndex);
         }
         
         public void Reset()

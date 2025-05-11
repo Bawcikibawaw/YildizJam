@@ -7,13 +7,6 @@ namespace Murat.Scripts.Runtime.Controllers.Player
 {
     public class PlayerPhysicsController : MonoBehaviour
     {
-    
-    
-        private void OnCollisionEnter2D(Collision2D other)
-        {
-        
-        }
-
         private void OnTriggerEnter2D(Collider2D other)
         {
             if (other.TryGetComponent<IDamageable>(out var  damageable))
@@ -25,7 +18,7 @@ namespace Murat.Scripts.Runtime.Controllers.Player
 
         private IEnumerator ResetGame()
         {
-            //Dead
+            // Dead
             // Disable input
             yield return new WaitForSeconds(1);
             LevelManager.Instance.Reset();

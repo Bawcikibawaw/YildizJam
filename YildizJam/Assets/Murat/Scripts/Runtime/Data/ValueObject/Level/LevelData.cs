@@ -7,5 +7,6 @@ namespace Murat.Scripts.Runtime.Data.ValueObject.Level
     public struct LevelData
     {
         public GameObject[] LevelObjects;
+        public Vector3[] LevelPositions;
     }
 }

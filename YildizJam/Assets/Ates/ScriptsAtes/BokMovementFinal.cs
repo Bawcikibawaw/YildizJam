@@ -19,6 +19,10 @@ namespace Ates.ScriptsAtes
     
         private MideGuruldama mideGuruldama;
         private KabızIshal kabızIshal;
+
+        private float xInput;
+
+        public float GetXInput => xInput;
     
         void Start()
         {
@@ -42,19 +46,25 @@ namespace Ates.ScriptsAtes
         {
             if (Input.GetKey(KeyCode.D))
             {
+                xInput = 1;
                 // Koşma sesi çalacak
                 AudioManager.Instance.PlaySound("Walking");
                 if (moveSpeed < maxSpeed) moveSpeed += acceleration * Time.deltaTime;
                 transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
                 animator.SetInteger("Walk", 1);
             }
-            if (Input.GetKey(KeyCode.A))
+            else if (Input.GetKey(KeyCode.A))
             {
+                xInput = -1;
                 // Koşma sesi çalacak
                 AudioManager.Instance.PlaySound("Walking");
                 if (moveSpeed < maxSpeed) moveSpeed += acceleration * Time.deltaTime;
                 transform.Translate(Vector2.left * moveSpeed * Time.deltaTime);
                 animator.SetInteger("Walk", 1);
+            }
+            else
+            {
+                xInput = 0;
             }
             
             if (Input.GetKey(KeyCode.D) && kabızIshal.isKabiz)

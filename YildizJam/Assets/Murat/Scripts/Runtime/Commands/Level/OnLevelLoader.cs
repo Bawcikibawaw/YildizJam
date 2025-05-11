@@ -1,3 +1,4 @@
+using Murat.Scripts.Runtime.Data.ValueObject.Level;
 using UnityEngine;
 
 namespace Murat.Scripts.Runtime.Commands.Level
@@ -11,9 +12,9 @@ namespace Murat.Scripts.Runtime.Commands.Level
             _levelHolder = levelHolder;
         }
         
-        public void Execute(GameObject spawnLevel)
+        public void Execute(LevelData data, int currentMapIndex)
         {
-            Object.Instantiate(spawnLevel,_levelHolder, true);
+            Object.Instantiate(data.LevelObjects[currentMapIndex],data.LevelPositions[currentMapIndex], Quaternion.identity, _levelHolder);
         }
     }
 }

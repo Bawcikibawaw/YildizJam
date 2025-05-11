@@ -13,7 +13,19 @@ MonoBehaviour:
   m_Name: CD_Level
   m_EditorClassIdentifier: 
   LevelData:
-    LevelObjects:
+  - LevelObjects:
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
+    LevelPositions:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+  - LevelObjects:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    LevelPositions:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}

@@ -1,5 +1,8 @@
+using System;
+using Ates.ScriptsAtes;
 using Murat.Scripts.Runtime.Controllers;
 using Murat.Scripts.Runtime.Data.UnityObject;
+using Murat.Scripts.Runtime.Data.ValueObject;
 using Murat.Scripts.Runtime.Data.ValueObject.BG;
 using Murat.Scripts.Runtime.Events;
 using Unity.Mathematics;
@@ -10,6 +13,8 @@ namespace Murat.Scripts.Runtime.Managers
     public class BGManager : MonoBehaviour
     {
         [SerializeField] private BGController[] bgs;
+
+        [SerializeField] private BokMovementFinal movement;
 
         private CD_BG _data;
 
@@ -32,6 +37,11 @@ namespace Murat.Scripts.Runtime.Managers
         {
             InputEvents.Instance.onMoveStart += OnStartMove;
             InputEvents.Instance.onMoveStop += OnStopMove;
+        }
+
+        private void Update()
+        {
+            SetAllBGsDir(movement.GetXInput);
         }
 
         private void OnStartMove(float2 value)

@@ -74,7 +74,7 @@ namespace Murat.Scripts.Runtime.Managers
 
         public void Quit()
         {
-            SceneManager.LoadSceneAsync(1);
+            SceneManager.LoadSceneAsync("Story");
         }
         
     }

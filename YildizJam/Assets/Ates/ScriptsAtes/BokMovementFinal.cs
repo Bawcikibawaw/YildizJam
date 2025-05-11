@@ -31,10 +31,14 @@ namespace Ates.ScriptsAtes
             kabızIshal = GameObject.FindGameObjectWithTag("Player").GetComponent<KabızIshal>();
             AudioManager.Instance.PlaySound("Walking");
         }
-        void Update()
+
+        void FixedUpdate()
         {
             Move();
             DeAcceleration();
+        }
+        void Update()
+        {
             Side();
             if (mideGuruldama.hasGuruldama && mideGuruldama.loopStarted)
             {

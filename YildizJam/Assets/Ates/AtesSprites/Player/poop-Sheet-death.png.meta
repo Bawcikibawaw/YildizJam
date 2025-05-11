@@ -1,0 +1,585 @@
+fileFormatVersion: 2
+guid: ca2b9b27449f68148bcafaffe869e8bd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3419406472915625063
+    second: poop-Sheet-death_0
+  - first:
+      213: -8351444004178073800
+    second: poop-Sheet-death_1
+  - first:
+      213: 1772715588625921450
+    second: poop-Sheet-death_2
+  - first:
+      213: 213707413575951007
+    second: poop-Sheet-death_3
+  - first:
+      213: -4453569445139973578
+    second: poop-Sheet-death_4
+  - first:
+      213: 4425634121036111394
+    second: poop-Sheet-death_5
+  - first:
+      213: 6332174076799791809
+    second: poop-Sheet-death_6
+  - first:
+      213: 6485178057198871464
+    second: poop-Sheet-death_7
+  - first:
+      213: -8295166794338267234
+    second: poop-Sheet-death_8
+  - first:
+      213: -172254283693920793
+    second: poop-Sheet-death_9
+  - first:
+      213: 8731898973539942949
+    second: poop-Sheet-death_10
+  - first:
+      213: 702453377763006325
+    second: poop-Sheet-death_11
+  - first:
+      213: -6656790718907026522
+    second: poop-Sheet-death_12
+  - first:
+      213: 2302926424483856989
+    second: poop-Sheet-death_13
+  - first:
+      213: 6808915116075550735
+    second: poop-Sheet-death_14
+  - first:
+      213: -8600635192266419132
+    second: poop-Sheet-death_15
+  - first:
+      213: 8235019929222239654
+    second: poop-Sheet-death_16
+  - first:
+      213: -6229678543750336702
+    second: poop-Sheet-death_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: poop-Sheet-death_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 1
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 764aec0021c247f20800000000000000
+      internalID: 3419406472915625063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poop-Sheet-death_1
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 1
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83766611de5b91c80800000000000000
+      internalID: -8351444004178073800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poop-Sheet-death_2
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 1
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa578d38f63f99810800000000000000
+      internalID: 1772715588625921450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poop-Sheet-death_3
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 2
+        width: 20
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f92ef08a2cd37f200800000000000000
+      internalID: 213707413575951007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poop-Sheet-death_4
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 18
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63af5e78f2eb132c0800000000000000
+      internalID: -4453569445139973578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poop-Sheet-death_5
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 33
+        width: 10
+        height: 11
+      alignment: 9
+      pivot: {x: 0.4671646, y: 0.50841904}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22e943af8c20b6d30800000000000000
+      internalID: 4425634121036111394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poop-Sheet-death_6
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 12
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c2b69706c660e750800000000000000
+      internalID: 6332174076799791809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poop-Sheet-death_7
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 13
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a32f74451bfff950800000000000000
+      internalID: 6485178057198871464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poop-Sheet-death_8
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 11
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9f0ade00c5a1ec80800000000000000
+      internalID: -8295166794338267234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poop-Sheet-death_9
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 0
+        width: 37
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ed626144a70c9df0800000000000000
+      internalID: -172254283693920793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poop-Sheet-death_10
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 10
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52242745adfed2970800000000000000
+      internalID: 8731898973539942949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poop-Sheet-death_11
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 4
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57756d410ad9fb900800000000000000
+      internalID: 702453377763006325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poop-Sheet-death_12
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 0
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a3fd6f3c145e93a0800000000000000
+      internalID: -6656790718907026522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poop-Sheet-death_13
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 0
+        width: 30
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d528833b163a5ff10800000000000000
+      internalID: 2302926424483856989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poop-Sheet-death_14
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 2
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f08887f09302e7e50800000000000000
+      internalID: 6808915116075550735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poop-Sheet-death_15
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 0
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4449c3a5cd764a880800000000000000
+      internalID: -8600635192266419132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poop-Sheet-death_16
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 3
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a5dd8f9efaa84270800000000000000
+      internalID: 8235019929222239654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poop-Sheet-death_17
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 0
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24f63e6ee5cbb89a0800000000000000
+      internalID: -6229678543750336702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e34d9e5481c62be4ba1ee33e23ad15f7
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      poop-Sheet-death_0: 3419406472915625063
+      poop-Sheet-death_1: -8351444004178073800
+      poop-Sheet-death_10: 8731898973539942949
+      poop-Sheet-death_11: 702453377763006325
+      poop-Sheet-death_12: -6656790718907026522
+      poop-Sheet-death_13: 2302926424483856989
+      poop-Sheet-death_14: 6808915116075550735
+      poop-Sheet-death_15: -8600635192266419132
+      poop-Sheet-death_16: 8235019929222239654
+      poop-Sheet-death_17: -6229678543750336702
+      poop-Sheet-death_2: 1772715588625921450
+      poop-Sheet-death_3: 213707413575951007
+      poop-Sheet-death_4: -4453569445139973578
+      poop-Sheet-death_5: 4425634121036111394
+      poop-Sheet-death_6: 6332174076799791809
+      poop-Sheet-death_7: 6485178057198871464
+      poop-Sheet-death_8: -8295166794338267234
+      poop-Sheet-death_9: -172254283693920793
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

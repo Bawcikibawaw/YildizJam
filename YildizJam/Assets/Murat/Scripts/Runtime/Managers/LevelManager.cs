@@ -1,6 +1,5 @@
 using Murat.Scripts.Runtime.Commands.Level;
 using Murat.Scripts.Runtime.Data.UnityObject;
-using Murat.Scripts.Runtime.Data.ValueObject.Level;
 using Murat.Scripts.Runtime.Extensions;
 using UnityEngine;
 
@@ -25,6 +24,8 @@ namespace Murat.Scripts.Runtime.Managers
             _levelDestroyer = new OnLevelDestroyer(levelHolder);
 
             _currenLevelData = Resources.Load<CD_Level>("Data/CD_Level");
+            
+            _levelLoader.Execute(_currenLevelData.LevelData[_currentLevelIndex],_currentMapIndex);
         }
 
         private void OnLoadNewMap()

@@ -1,4 +1,6 @@
+using System.Collections;
 using Murat.Scripts.Runtime.Interfaces;
+using Unity.Cinemachine;
 using UnityEngine;
 
 namespace Murat.Scripts.HP
@@ -11,6 +13,12 @@ namespace Murat.Scripts.HP
             {
                 Debug.Log("öldü ");
             }
+
+            if (other.TryGetComponent<CollideObject>(out var obj))
+            {
+                transform.position = obj.GoPos;
+            }
         }
+
     }
 }

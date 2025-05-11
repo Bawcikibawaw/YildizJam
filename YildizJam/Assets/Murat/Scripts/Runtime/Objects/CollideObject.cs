@@ -1,11 +1,19 @@
 using UnityEngine;
 
-public class CollideObject : MonoBehaviour
+namespace Murat.Scripts.Runtime.Objects
 {
-    
-    
-    [SerializeField] private Vector2 goPos;
+    public class CollideObject : MonoBehaviour
+    {
+        public Vector3 newPlayerPosition;
 
-    public Vector2 GoPos => goPos;
-    
+        private void OnCollisionEnter2D(Collision2D collision)
+        {
+            if (collision.gameObject.CompareTag("Player"))
+            {
+                // Sana çarpan Player nesnesinin transformunu değiştir
+                collision.gameObject.transform.position = newPlayerPosition;
+
+            }
+        }
+    }
 }

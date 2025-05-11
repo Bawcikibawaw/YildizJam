@@ -19,6 +19,7 @@ namespace Murat.Scripts.HP
             if (other.TryGetComponent<IDamageable>(out var damageable))
             {
                 transform.position = teleportTarget.position;
+                Debug.Log("öldü");
             }
         }
 

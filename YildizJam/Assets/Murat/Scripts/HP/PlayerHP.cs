@@ -1,13 +1,16 @@
 using Murat.Scripts.Runtime.Interfaces;
 using UnityEngine;
 
-public class PlayerHP : MonoBehaviour
+namespace Murat.Scripts.HP
 {
-    private void OnTriggerEnter(Collider other)
+    public class PlayerHP : MonoBehaviour
     {
-        if (other.TryGetComponent<IDamageable>(out var damageable))
+        private void OnTriggerEnter2D (Collider2D other)
         {
-            // Player Dead
+            if (other.TryGetComponent<IDamageable>(out var damageable))
+            {
+                Debug.Log("öldü ");
+            }
         }
     }
 }

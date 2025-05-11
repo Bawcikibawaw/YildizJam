@@ -16,10 +16,11 @@ MonoBehaviour:
   - LevelObjects:
     - {fileID: 8951171284324690524, guid: 6a780ddfff657cb4d8458a8eb4549e26, type: 3}
     - {fileID: 709893160477423259, guid: d3e4a47591b25c54fac0558e455227d5, type: 3}
+    - {fileID: 8951171284324690524, guid: 6a780ddfff657cb4d8458a8eb4549e26, type: 3}
     - {fileID: 8396631514142931729, guid: 0484e659257e0694bb428fc33655de14, type: 3}
     LevelPositions:
     - {x: 0, y: 0, z: 0}
-    - {x: 0, y: 0, z: 0}
+    - {x: -1, y: 12, z: 0}
     - {x: 0, y: 0, z: 0}
   - LevelObjects:
     - {fileID: 0}

@@ -28,7 +28,7 @@ namespace Murat.Scripts.Runtime.Managers
             _levelLoader.Execute(_currenLevelData.LevelData[_currentLevelIndex],_currentMapIndex);
         }
 
-        private void OnLoadNewMap()
+        public void OnLoadNewMap()
         {
             _levelDestroyer.Execute();
             _currentMapIndex++;

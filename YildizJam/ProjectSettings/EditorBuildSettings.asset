@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Ates/Scenes/MenuAtes.unity
+    guid: 1b355025b20dc884883f9cddd8c4464b
+  - enabled: 1
     path: Assets/Ates/Scenes/Ates 2.unity
     guid: ae975e3e3a2218746bd5101945204cac
   m_configObjects:

@@ -3,6 +3,7 @@ using Murat.Scripts.Runtime.Events;
 using Murat.Scripts.Runtime.Extensions;
 using Murat.Scripts.Runtime.Helpers;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace Murat.Scripts.Runtime.Managers
@@ -73,7 +74,7 @@ namespace Murat.Scripts.Runtime.Managers
 
         public void Quit()
         {
-            // TODO : GameStartAction
+            SceneManager.LoadSceneAsync(1);
         }
         
     }

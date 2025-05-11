@@ -1,0 +1,481 @@
+fileFormatVersion: 2
+guid: b41447d39ac6c4040b3fa3900f21281f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2888203148043832440
+    second: poop-Sheet-hard_0
+  - first:
+      213: 7902431912863212963
+    second: poop-Sheet-hard_1
+  - first:
+      213: -7577348345384243650
+    second: poop-Sheet-hard_2
+  - first:
+      213: 3789797586211411835
+    second: poop-Sheet-hard_3
+  - first:
+      213: -1977932279120715923
+    second: poop-Sheet-hard_4
+  - first:
+      213: 8938131509183390172
+    second: poop-Sheet-hard_5
+  - first:
+      213: -5304783632149785027
+    second: poop-Sheet-hard_6
+  - first:
+      213: -8166820876594716721
+    second: poop-Sheet-hard_7
+  - first:
+      213: 2265346316960754290
+    second: poop-Sheet-hard_8
+  - first:
+      213: 7685412303162043348
+    second: poop-Sheet-hard_9
+  - first:
+      213: 4373253842872983843
+    second: poop-Sheet-hard_10
+  - first:
+      213: 3010416072376384572
+    second: poop-Sheet-hard_11
+  - first:
+      213: -8393295648875151476
+    second: poop-Sheet-hard_12
+  - first:
+      213: -4320401737569150951
+    second: poop-Sheet-hard_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: poop-Sheet-hard_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 1
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87c4156f575f41820800000000000000
+      internalID: 2888203148043832440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poop-Sheet-hard_1
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 0
+        width: 18
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a52ce3b4f31bad60800000000000000
+      internalID: 7902431912863212963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poop-Sheet-hard_2
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 0
+        width: 25
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3e6afd83d9d7d690800000000000000
+      internalID: -7577348345384243650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poop-Sheet-hard_3
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 39
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7793c053d0189430800000000000000
+      internalID: 3789797586211411835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poop-Sheet-hard_4
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 0
+        width: 31
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6f1b395219fc84e0800000000000000
+      internalID: -1977932279120715923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poop-Sheet-hard_5
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 39
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd12a98504f9a0c70800000000000000
+      internalID: 8938131509183390172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poop-Sheet-hard_6
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 1
+        width: 47
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d36d76b746f9166b0800000000000000
+      internalID: -5304783632149785027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poop-Sheet-hard_7
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 36
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcfd352beaf99ae80800000000000000
+      internalID: -8166820876594716721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poop-Sheet-hard_8
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 38
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27a6fa31970207f10800000000000000
+      internalID: 2265346316960754290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poop-Sheet-hard_9
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 1
+        width: 25
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dbe36a45c118aa60800000000000000
+      internalID: 7685412303162043348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poop-Sheet-hard_10
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 5
+        width: 6
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3216e09133be0bc30800000000000000
+      internalID: 4373253842872983843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poop-Sheet-hard_11
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 0
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3cfe1cc77527c920800000000000000
+      internalID: 3010416072376384572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poop-Sheet-hard_12
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 0
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8ff6f1b316058b80800000000000000
+      internalID: -8393295648875151476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poop-Sheet-hard_13
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 0
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 918d5399289da04c0800000000000000
+      internalID: -4320401737569150951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      poop-Sheet-hard_0: 2888203148043832440
+      poop-Sheet-hard_1: 7902431912863212963
+      poop-Sheet-hard_10: 4373253842872983843
+      poop-Sheet-hard_11: 3010416072376384572
+      poop-Sheet-hard_12: -8393295648875151476
+      poop-Sheet-hard_13: -4320401737569150951
+      poop-Sheet-hard_2: -7577348345384243650
+      poop-Sheet-hard_3: 3789797586211411835
+      poop-Sheet-hard_4: -1977932279120715923
+      poop-Sheet-hard_5: 8938131509183390172
+      poop-Sheet-hard_6: -5304783632149785027
+      poop-Sheet-hard_7: -8166820876594716721
+      poop-Sheet-hard_8: 2265346316960754290
+      poop-Sheet-hard_9: 7685412303162043348
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

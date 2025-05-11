@@ -14,6 +14,7 @@ namespace Ates.ScriptsAtes
        private Rigidbody2D rb;
        private BokStamina bokStamina;
        private KabızIshal kabızIshal;
+       public Animator animator;
 
        void Start()
        {
@@ -49,9 +50,11 @@ namespace Ates.ScriptsAtes
            isDashing = true;
            canDash = false;
            hasDashed = true;
+           animator.SetBool("isDash" , true);
            yield return new WaitForSeconds(dashingTime);
            isDashing = false;
            hasDashed = false;
+           animator.SetBool("isDash" , false);
            yield return new WaitForSeconds(dashingCooldown);
            canDash = true;
        }

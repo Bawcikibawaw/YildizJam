@@ -914,7 +914,6 @@ GameObject:
   - component: {fileID: 1070006511}
   - component: {fileID: 1070006510}
   - component: {fileID: 1070006509}
-  - component: {fileID: 1070006508}
   - component: {fileID: 1070006507}
   - component: {fileID: 1070006506}
   - component: {fileID: 1070006514}
@@ -978,25 +977,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dashingPower: 5
-  dashingTime: 0.2
+  dashingTime: 0.75
   dashingCooldown: 1
   hasDashed: 0
---- !u!114 &1070006508
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1070006504}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34316cdb898471d4a9a48c6544947953, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 2
-  maxSpeed: 10
-  minSpeed: 2
-  acceleration: 5
   animator: {fileID: 1070006505}
 --- !u!114 &1070006509
 MonoBehaviour:
@@ -1019,6 +1002,8 @@ MonoBehaviour:
   hasJumped: 0
   maxExtraJumps: 1
   animator: {fileID: 1070006505}
+  audioSource: {fileID: 1070006515}
+  audioClip: {fileID: 8300000, guid: c76cf95a4f5f88c44a5e4aaaa331187e, type: 3}
 --- !u!50 &1070006510
 Rigidbody2D:
   serializedVersion: 5
@@ -1177,9 +1162,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isKabiz: 0
   isIshal: 0
-  cooldown: 2
+  cooldown: 10
   sUse: 20
-  shrinkSize: {x: 0.2, y: 0.2}
+  shrinkSize: {x: 2, y: 0.5}
+  animator: {fileID: 1070006505}
 --- !u!82 &1070006515
 AudioSource:
   m_ObjectHideFlags: 0

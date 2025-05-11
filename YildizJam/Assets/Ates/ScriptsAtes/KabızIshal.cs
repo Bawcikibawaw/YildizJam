@@ -15,6 +15,7 @@ namespace Ates.ScriptsAtes
         private BoxCollider2D boxCollider;
         private Vector2 originalSize;
         public Vector2 shrinkSize = new Vector2(0.2f, 0.2f);
+        public Animator animator;
 
 
         void Start()
@@ -42,6 +43,26 @@ namespace Ates.ScriptsAtes
                     Debug.Log("Bekleme süresi dolmadı!");
                 }
             }
+
+            if (isKabiz)
+            {
+                animator.SetBool("isKabiz", true);
+            }
+
+            if (isIshal)
+            {
+                animator.SetBool("isIshal", true);
+            }
+
+            if (!isKabiz)
+            {
+                animator.SetBool("isKabiz", false);
+            }
+
+            if (!isIshal)
+            {
+                animator.SetBool("isIshal", false);
+            }
         }
 
         void EventChoser()
@@ -64,7 +85,7 @@ namespace Ates.ScriptsAtes
         private IEnumerator Kabiz()
         {
             isKabiz = true;
-            yield return new WaitForSecondsRealtime(1f);
+            yield return new WaitForSecondsRealtime(3f);
             isKabiz = false;
         }
 
@@ -72,7 +93,7 @@ namespace Ates.ScriptsAtes
         {
             isIshal = true;
             boxCollider.size = shrinkSize;
-            yield return new WaitForSecondsRealtime(1f);
+            yield return new WaitForSecondsRealtime(3f);
             boxCollider.size = originalSize;
             isIshal = false;
         }

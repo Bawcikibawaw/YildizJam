@@ -22,7 +22,6 @@ namespace Ates.ScriptsAtes
     
         void Update()
         {
-            Debug.Log(audioSource);
             if (!hasGuruldama && !loopStarted)
             {
                 loopStarted = true;

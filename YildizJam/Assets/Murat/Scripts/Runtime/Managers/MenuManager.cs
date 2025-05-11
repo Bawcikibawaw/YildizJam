@@ -1,4 +1,3 @@
-using System;
 using Murat.Scripts.Runtime.BaseClass;
 using Murat.Scripts.Runtime.Events;
 using Murat.Scripts.Runtime.Extensions;
@@ -74,7 +73,7 @@ namespace Murat.Scripts.Runtime.Managers
 
         public void Quit()
         {
-            Application.Quit();
+            // TODO : GameStartAction
         }
         
     }

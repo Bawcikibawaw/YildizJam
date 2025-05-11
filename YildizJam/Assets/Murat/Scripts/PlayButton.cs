@@ -14,7 +14,7 @@ namespace Murat.Scripts
 
         public void Play()
         {
-            if (_currentIndex > goPoses.Length) return;
+            if (_currentIndex >= goPoses.Length) return;
             Go();
         }
 

@@ -7,16 +7,18 @@ namespace Murat.Scripts.HP
 {
     public class PlayerHP : MonoBehaviour
     {
+        public Transform teleportTarget;
+        private Transform transform;
+
+        void Start()
+        {
+            transform = GetComponent<Transform>();
+        }
         private void OnTriggerEnter2D (Collider2D other)
         {
             if (other.TryGetComponent<IDamageable>(out var damageable))
             {
-                Debug.Log("öldü ");
-            }
-
-            if (other.TryGetComponent<CollideObject>(out var obj))
-            {
-                transform.position = obj.GoPos;
+                transform.position = teleportTarget.position;
             }
         }
 

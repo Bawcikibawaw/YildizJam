@@ -37,7 +37,7 @@ namespace Ates.ScriptsAtes
             {
                 animator.SetInteger("Jump" , 0);
                 extraJumps = maxExtraJumps; // Reset extra jumps when grounded
-                Debug.Log("BABANA SOKAYIIIIIIIIM");
+                
             }
             // Jump input detected
             if (Input.GetButtonDown("Jump") && bokStamina.stamina >= 20)
